@@ -1,0 +1,282 @@
+<!---Html file(html code.html)-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akanksha Katkar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!---NAVBAR-->
+    <nav>
+        <div class="logo">AKANKSHA'S PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a herf="#certificates">Certificates</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--HOME SECTION-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="my profile photo.jpeg" alt="My Profile Image" class="profile-img">
+            <h1>Hi, I'm <span>AKANKSHA GORAKH KATKAR</span></h1>
+            <p>A Passionate Developer student & good learner.</p>
+            <div class="hero-buttons">
+                <a href="https://linkedin.com" target="_blank" class="btn">Connect on LinkedIn</a>
+                <a href="#contact" class="btn">Get In Touch</a>
+           </div>
+            
+        </div>
+    </section>
+    <!--ABOUT-->
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <div class="glass list-item">
+            <p>I am a dedicated Computer Engineering student with a strong interest in core concepts like data structures, algorithms, and system design. I am a quick learner who adapts easily to new technologies and continuously seeks to expand my knowledge. I enjoy solving problems that challenge my logical and analytical thinking. I am motivated to apply my skills to real-world projects and grow as a technology professional.</p>
+                <div class="hero-buttons">
+                    <a href="my resume.pdf" download class="btn">View Resume</a>
+                </div>
+
+  </div>
+
+        </div>
+    </section>
+    <!---SKILLS-->
+    <section id="skills" class="reveal">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+        <!-- HTML/CSS -->
+        <div class="skill-card glass" style="--target-p: 80">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML/CSS</h3>
+            <p>Modern Web Styling</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">80%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- C -->
+        <div class="skill-card glass" style="--target-p: 75">
+            <div class="skill-icon">⚙️</div>
+            <h3>C Programming</h3>
+            <p>System Level Logic</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">75%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card glass" style="--target-p: 50">
+            <div class="skill-icon">🐍</div>
+            <h3>Python</h3>
+            <p>Data & Automations</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">50%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- Linux -->
+        <div class="skill-card glass" style="--target-p: 40">
+            <div class="skill-icon">🐧</div>
+            <h3>Linux</h3>
+            <p>System & Server Management</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">40%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- Tableau -->
+        <div class="skill-card glass" style="--target-p: 90">
+            <div class="skill-icon">📊</div>
+            <h3>Tableau</h3>
+            <p>Data Visualization</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">90%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+    </div>
+</section>  
+            
+    <!--EDUCATION-->
+    <section id="education" class="reveal">
+        <h2>Education</h2>
+        <div class="education-item glass">
+            <h3>Persuing Bachelor of Technology</h3>
+            <p style="color: var(--primary)">Computer Science & Engineering</p>
+            <p><small>2025 - 2029</small></p>
+            <p style="margin-top: 10px; color: var(--text-dim)">Focused on software architecture, algorithms, and web
+                technologies.</p>
+        </div>
+    </section>
+    <!-- CERTIFICATES -->
+    <section class="certificates">
+        <div class="Certificate-item glass">
+        <h2>My Certifications</h2>
+        <div class="certificates-grid">
+            <div class="certificate-card">
+
+            <!-- Certificate 1 -->
+            <div>
+                 <h3>Digital Skills</h3>
+                <p>Basic digital tools and productivity skills.</p>
+                <button onclick="openCert('Nasscomm certificate.png ')">View Certificate</button>
+            </div>
+
+            <!-- Certificate 2 -->
+    <div>
+        <h3>Python Programming_1</h3>
+         <p>Learned Python basics and problem solving.</p>
+        <button onclick="openCert('python cisco1.png')">View Certificate</button>
+    </div>
+    <!--Certificate 3-->
+    <div>
+        <h3>Python Programming_2</h3>
+         <p>Learned Python basics and problem solving.</p>
+        <button onclick="openCert('python cisco2.png')">View Certificate</button>
+    </div>
+
+  <!-- Certificate 4 -->
+  <div>
+    <h3>Data Analysis</h3>
+    <p>Basic data handling and visualization.</p>
+    <button onclick="openCert('Infosys certificate.png')">View Certificate</button>
+  </div>
+
+  <!-- Certificate 5 -->
+  <div>
+    <h3>Cloude101</h3>
+    <p>Learned basics of AI tools and effective prompting to improve productivity and problem-solving.</p>
+    <button onclick="openCert('Cloude1.png')">View Certificate</button>
+  </div>
+
+  <!-- Certificate 6 -->
+  <div>
+    <h3>AI Fluency for Students</h3>
+    <p>Explored how AI can enhance learning, research, and career preparation efficiently.</p>
+    <button onclick="openCert('cloud2.png')">View Certificate</button>
+  </div>
+
+  <!-- Certificate 7 -->
+  <div>
+    <h3>AI Fluency for Nonprofit</h3>
+    <p>Learned to apply AI for solving social problems and creating meaningful real-world impact.</p>
+    <button onclick="openCert('Cloud3.png')">View Certificate</button>
+  </div>
+
+  <!-- Certificate 8 -->
+  <div>
+    <h3>AI Fluency : Framework & Foundations</h3>
+    <p>Gained understanding of responsible, ethical, and safe use of AI in real-world applications.</p>
+    <button onclick="openCert('Cloud4.png')">View Certificate</button>
+  </div>
+
+  <!-- Certificate 9 -->
+  <div>
+    <h3>NASSCOM Digital 101 (30hrs)</h3>
+    <p>Gained foundational knowledge of emerging technologies like AI, cloud computing, cybersecurity, and their real-world applications.</p>
+    <button onclick="openCert('Nasscomm certificate.png')">View Certificate</button>
+  </div>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- JavaScript -->
+<script>
+  function openCert(file) {
+    window.open(file, '_blank');
+  }
+</script>
+
+    </div>
+</section>
+    <!--PROJECTS-->
+    <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="glass project-card">
+                <h3>Portfolio Website</h3>
+                <p style="color: var(--text-dim)">An interactive personal showcase built with HTML, CSS, and JS
+                    featuring glassmorphism and custom animations.</p>
+                <div class="project-links">
+                    <a href="#">View Demo</a>
+                    <a href="index.html">Html Source Code</a>
+                    <a href="style.css">Css Source Code</a>
+                </div>
+            </div>
+            <div class="glass project-card">
+                <h3>Digital security door lock system </h3>
+                <p style="color: var(--text-dim)">This is electronic project of Digital Electronics and Engineering , 
+                    Which is smater way to open a door by entering and password ,
+                     in this project we use basic logic gates like XOR and NOR gates.</p>
+                <div class="project-links">
+                    <a href="dee project report final.pdf">View report</a>
+                    <a href="dee ppt.pptx">Source ppt</a>
+                </div>
+                <div class="glass project-card">
+                    <h3>Finance manament for hostel/PG students. </h3>
+                    <p style="color: var(--text-dim)">In this project , we had been creaded a website which show overall record
+                         of spending money by the help of pie chart.</p>
+                <div class="project-links">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdOPtZz7IuiVYUVAA48-cYiC3WCjyylxF3tJb9tNg5RmcTD_Q/viewform?usp=header">google form</a>
+                    <a href="https://www.canva.com/design/DAHAwRVrwFM/QPSgqw_naO1ppRJrOblZ1w/edit?utm_content=DAHAwRVrwFM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">Source ppt</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT-->
+    <section id="contact" class="reveal">
+        <h2>Contact Me</h2>
+       <form action="https://formspree.io/f/mrerkbnk" method="POST" class="contact-form glass list-item">
+        
+            <input type="text" name="visitor_name" placeholder="Name" required>
+        
+            <input type="email" name="_replyto" placeholder="Email" required>
+        
+            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+
+            <input type="hidden" name="_subject" value="New Portfolio Message!">
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <script>
+        // Scroll Reveal Logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

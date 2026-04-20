@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">AKANKSHA'S PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="my profile photo.jpeg" alt="My Profile Image" class="profile-img">
+            <h1>Hi, I'm <span>AKANKSHA GORAKH KATKAR</span></h1>
+            <p>A Passionate Developer student & good learner.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="reveal">
+        <h2>About Me</h2>
+        <div class="glass list-item">
+            <p>I am a creative developer student focused on building beautiful, interactive, and user-centric web applications.
+                I love turning complex problems into simple, elegant solutions.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="reveal">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+        <!-- HTML/CSS -->
+        <div class="skill-card glass" style="--target-p: 80">
+            <div class="skill-icon">🌐</div>
+            <h3>HTML/CSS</h3>
+            <p>Modern Web Styling</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">80%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- C -->
+        <div class="skill-card glass" style="--target-p: 75">
+            <div class="skill-icon">⚙️</div>
+            <h3>C Programming</h3>
+            <p>System Level Logic</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">75%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card glass" style="--target-p: 90">
+            <div class="skill-icon">🐍</div>
+            <h3>Python</h3>
+            <p>Data & Automations</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">90%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- Linux -->
+        <div class="skill-card glass" style="--target-p: 90">
+            <div class="skill-icon">🐧</div>
+            <h3>Linux</h3>
+            <p>System & Server Management</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">90%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+        <!-- Tableau -->
+        <div class="skill-card glass" style="--target-p: 50">
+            <div class="skill-icon">📊</div>
+            <h3>Tableau</h3>
+            <p>Data Visualization</p>
+            <div class="skill-percent">
+                <div class="circular-progress">
+                    <span class="percent-value">50%</span>
+                </div>
+                <span>Proficiency</span>
+            </div>
+        </div>
+
+    </div>
+</section>  
+            
+
+    <section id="education" class="reveal">
+        <h2>Education</h2>
+        <div class="education-item glass">
+            <h3>Bachelor of Technology</h3>
+            <p style="color: var(--primary)">Computer Science & Engineering</p>
+            <p><small>2025 - 2029</small></p>
+            <p style="margin-top: 10px; color: var(--text-dim)">Focused on software architecture, algorithms, and web
+                technologies.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="reveal">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="glass project-card">
+                <h3>Portfolio Website</h3>
+                <p style="color: var(--text-dim)">An interactive personal showcase built with HTML, CSS, and JS
+                    featuring glassmorphism and custom animations.</p>
+                <div class="project-links">
+                    <a href="#">View Demo</a>
+                    <a href="index.html">Html Source Code</a>
+                    <a href="style.css">Css Source Code</a>
+                </div>
+            </div>
+            <div class="glass project-card">
+                <h3>Digital security door lock system </h3>
+                <p style="color: var(--text-dim)">This is electronic project of Digital Electronics and Engineering , 
+                    Which is smater way to open a door by entering and password ,
+                     in this project we use basic logic gates like XOR and NOR gates.</p>
+                <div class="project-links">
+                    <a href="dee project report final.pdf">View report</a>
+                    <a href="dee ppt.pptx">Source ppt</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="reveal">
+        <h2>Contact Me</h2>
+        <div class="contact-form glass list-item">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message" rows="5"></textarea>
+            <button class="btn">Send Message</button>
+        </div>
+    </section>
+
+    <script>
+        // Scroll Reveal Logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
